@@ -1,34 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 21:15:00 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/27 13:56:01 by vabad-ro         ###   ########.fr       */
+/*   Created: 2025/11/21 13:47:34 by vabad-ro          #+#    #+#             */
+/*   Updated: 2025/11/26 11:37:40 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	int	r;
+#include <stdio.h>
 
-	r = 1;
-	if (nb < 0)
-		return (0);
-	if (nb == 1 && nb == 0)
-		return (1);
-	while (nb > 1)
+int	ft_atoi(char *str)
+{
+	int	i;
+	int	nb;
+	int	cnt;
+	int	sign;
+
+	i = 0;
+	nb = 0;
+	cnt = 0;
+	sign = 1;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	while (str[i] == '+' || str[i] == '-')
 	{
-		r *= nb;
-		nb--;
+		if (str[i] == '-')
+			sign = sign * -1;
+		i++;
 	}
-	return (r);
+	while (str[i] <= '9' && str[i] >= '0')
+	{
+		nb = nb * 10 + (str[i] - '0');
+		i++;
+	}
+	return (nb * sign);
 }
 
 /*int	main(void)
 {
-	printf("%d", ft_iterative_factorial(10));
+	char	str[] = "-2147483648";
+	printf("%d", ft_atoi(str));
 	return (0);
 }*/

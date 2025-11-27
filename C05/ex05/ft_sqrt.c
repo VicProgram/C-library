@@ -6,7 +6,7 @@
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 18:56:09 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/26 20:50:45 by vabad-ro         ###   ########.fr       */
+/*   Updated: 2025/11/27 13:56:51 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ int	ft_sqrt(int nb)
 
 /*int	main(void)
 {
-	printf("%d", ft_sqrt(4));
+	printf("%d", ft_sqrt(0));
 	return (0);
 }*/

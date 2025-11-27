@@ -6,7 +6,7 @@
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 14:27:34 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/26 19:27:36 by vabad-ro         ###   ########.fr       */
+/*   Updated: 2025/11/27 11:47:27 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ void	ft_swap(char *s1, char *s2)
 {
 	char	*temp;
 
-	temp = s1;
-	s1 = s2;
-	s2 = s1;
+	*temp = *s1;
+	*s1 = *s2;
+	*s2 = *s1;
 }
 
 int	main(int argc,char **argv)
@@ -46,7 +46,7 @@ int	main(int argc,char **argv)
 	{
 		if ((ft_strcmp(argv[i],  argv[i + 1]) >= 0))
 			ft_swap(argv[i] ,argv[i + 1]);
-		i++;
+		 i++;
 	}
 	while (i < argc)
 	{

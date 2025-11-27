@@ -6,11 +6,9 @@
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 21:02:19 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/25 21:22:00 by vabad-ro         ###   ########.fr       */
+/*   Updated: 2025/11/27 14:06:47 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_is_prime(int nb)
 {

@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 21:15:00 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/27 13:56:01 by vabad-ro         ###   ########.fr       */
+/*   Created: 2025/11/20 18:59:59 by vabad-ro          #+#    #+#             */
+/*   Updated: 2025/11/24 18:10:35 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	int	r;
+#include <stdio.h>
 
-	r = 1;
-	if (nb < 0)
-		return (0);
-	if (nb == 1 && nb == 0)
-		return (1);
-	while (nb > 1)
-	{
-		r *= nb;
-		nb--;
-	}
-	return (r);
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
 
 /*int	main(void)
 {
-	printf("%d", ft_iterative_factorial(10));
-	return (0);
-}*/
+	char	arr[] = "hola mundo!";
+	printf("%d\n", ft_strlen(arr));
+}*/	

@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 21:15:00 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/27 13:56:01 by vabad-ro         ###   ########.fr       */
+/*   Created: 2025/11/27 16:00:14 by vabad-ro          #+#    #+#             */
+/*   Updated: 2025/11/27 16:26:30 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	int	r;
+#include <unistd.h>
+#include <stdio.h>
 
-	r = 1;
-	if (nb < 0)
-		return (0);
-	if (nb == 1 && nb == 0)
-		return (1);
-	while (nb > 1)
-	{
-		r *= nb;
-		nb--;
-	}
-	return (r);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
 }
 
-/*int	main(void)
+void	ft_putnbr(int nb)
 {
-	printf("%d", ft_iterative_factorial(10));
+	unsigned int	u;
+
+	if (nb < 0)
+	{
+		u = -nb;
+		write(1, "-", 1);
+	}
+	else
+		u = nb;
+	if (u >= 10)
+		ft_putnbr(u / 10);
+	ft_putchar(u % 10 + '0');
+}
+
+int	main(void)
+{
+	ft_putnbr(10000);
 	return (0);
-}*/
+}
