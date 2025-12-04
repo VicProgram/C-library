@@ -6,7 +6,7 @@
 /*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 19:27:41 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/26 12:30:27 by vabad-ro         ###   ########.fr       */
+/*   Updated: 2025/11/26 11:21:14 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ void	ft_putchar(char a)
 	write(1, &a, 1);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	ft_putnbr(10000);
 	return (0);
-}*/
+}
