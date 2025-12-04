@@ -10,12 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-/*
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-*/
+
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
