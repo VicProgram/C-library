@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: vabad-ro <vabad-ro@student.42madrid.c>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 14:27:34 by vabad-ro          #+#    #+#             */
 /*   Updated: 2025/12/04 21:30:00 by vabad-ro         ###   ########.fr       */
@@ -31,7 +31,7 @@ void	ft_swap(char **s1, char **s2)
 	*s2 = temp;
 }
 
-int	main(int argc, char **argv)
+void	sort_args(int argc, char **argv)
 {
 	int	i;
 	int	j;
@@ -48,17 +48,28 @@ int	main(int argc, char **argv)
 		}
 		i++;
 	}
+}
+
+void	print_args(int argc, char **argv)
+{
+	int	i;
+	int	j;
+
 	i = 1;
 	while (i < argc)
 	{
 		j = 0;
 		while (argv[i][j])
-		{
-			write(1, &argv[i][j], 1);
-			j++;
-		}
+			write(1, &argv[i][j++], 1);
 		write(1, "\n", 1);
 		i++;
 	}
+}
+
+/*int	main(int argc, char **argv)
+{
+	sort_args(argc, argv);
+	print_args(argc, argv);
 	return (0);
 }
+/*
