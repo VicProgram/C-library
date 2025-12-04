@@ -17,9 +17,9 @@ void ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-int main(void)
+/*int main(void)
 {
 	int c;
 	ft_ft(&c);
 	printf("%d\n", c);
-}
+}*/
