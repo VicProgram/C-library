@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vabad-ro <vabad-ro@student.42madrid.c>      +#+  +:+       +#+        */
+/*   By: vabad-ro <vabad-ro@student.42madrid.c>      +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 14:27:34 by vabad-ro          #+#    #+#             */
 /*   Updated: 2025/12/04 21:30:00 by vabad-ro         ###   ########.fr       */
@@ -66,10 +66,9 @@ void	print_args(int argc, char **argv)
 	}
 }
 
-/*int	main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	sort_args(argc, argv);
 	print_args(argc, argv);
 	return (0);
 }
-/*
