@@ -9,7 +9,57 @@
 /*   Updated: 2025/11/27 13:41:34 by vabad-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+char *ft_strdup(char *str)
+{
+	char *dup;
+	int		i;
+
+	i = 0;
+	dup = (char *)malloc(sizeof(*str) * (ft_strlen(str) + 1));
+	if (!dup)
+		return (NULL);
+	while (str[i])
+	{
+		dup[i] = str[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
+
+}
+
 int main(void)
 {
-	return 0;
+    char *original = "Hello, World!";
+    char *copy = ft_strdup(original);
+
+    if (copy == NULL)
+    {
+        printf("Error: malloc falló\n");
+        return 1;
+    }
+
+    printf("Original: %s\n", original);
+    printf("Copia: %s\n", copy);
+
+    free(copy);
+    return 0;
 }
