@@ -1,9 +1,22 @@
-[*]
-indent_style = tab
-indent_size = tab
-tab_width = 4
-insert_spaces = false
+# top-most EditorConfig file
+root = true
 
+[*]
+# Opciones generales para todos los archivos
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.c]
+indent_style = space
+indent_size = 4
+
+[*.h]
+indent_style = space
+indent_size = 4
+
+# --- Configuraciones específicas de C/C++ (Estas son de un formateador como Clang-Format) ---
 cpp_indent_braces=false
 cpp_indent_multi_line_relative_to=innermost_parenthesis
 cpp_indent_within_parentheses=indent

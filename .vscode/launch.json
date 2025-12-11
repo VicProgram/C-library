@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/vic/C-library/C01/ex00",
-      "program": "/home/vic/C-library/C01/ex00/build/Debug/outDebug",
+      "cwd": "/home/vic/C-library/C07/ex00",
+      "program": "/home/vic/C-library/C07/ex00/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

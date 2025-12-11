@@ -55,18 +55,5 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "editor.quickSuggestions": {
-    "other": false,
-    "comments": false,
-    "strings": false
-  },
-  "editor.tabCompletion": "on",
-  "editor.suggestOnTriggerCharacters": false,
-  "editor.parameterHints.enabled": false,
-  "editor.inlineSuggest.enabled": false,
-  "editor.hover.enabled": "off",
-  "editor.wordBasedSuggestions": "off",
-  "C_Cpp.autocomplete": "disabled",
-  "C_Cpp.intelliSenseEngine": "disabled"
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }

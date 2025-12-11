@@ -12,11 +12,11 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-#include <stdio.h>
+#include <stdio.h>S
 
 int	ft_strlen(char *str)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -27,7 +27,7 @@ int	ft_strlen(char *str)
 char	*ft_strdup(char *str)
 {
 	char	*dup;
-	int	i;
+	int	;
 	
 	i = 0;
 	dup = (char *)malloc(sizeof(*str) * (ft_strlen(str) + 1));
@@ -56,4 +56,4 @@ char	*ft_strdup(char *str)
     printf("Copia: %s\n", copy);
     free(copy);
     return 0;
-}
+}*/
