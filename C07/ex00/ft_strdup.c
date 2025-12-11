@@ -14,24 +14,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
 
-char *ft_strdup(char *str)
+char	*ft_strdup(char *str)
 {
-	char *dup;
-	int		i;
-
+	char	*dup;
+	int	i;
+	
 	i = 0;
 	dup = (char *)malloc(sizeof(*str) * (ft_strlen(str) + 1));
 	if (!dup)
@@ -43,7 +40,6 @@ char *ft_strdup(char *str)
 	}
 	dup[i] = '\0';
 	return (dup);
-
 }
 
 /*int main(void)
