@@ -52,10 +52,8 @@ char	*ft_strdup(char *str)
         printf("Error: malloc falló\n");
         return 1;
     }
-
     printf("Original: %s\n", original);
     printf("Copia: %s\n", copy);
-
     free(copy);
     return 0;
 }
