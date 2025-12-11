@@ -17,6 +17,8 @@ int	ft_sqrt(int nb)
 	int	i;
 
 	i = 0;
+	if (nb == 1)
+		return (1);
 	while (i <= nb / 2)
 	{
 		if (i * i == nb)
@@ -28,6 +30,6 @@ int	ft_sqrt(int nb)
 
 /*int	main(void)
 {
-	printf("%d", ft_sqrt(0));
+	printf("%d", ft_sqrt(1));
 	return (0);
-}*/
+}

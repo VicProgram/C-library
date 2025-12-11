@@ -46,7 +46,7 @@ char *ft_strdup(char *str)
 
 }
 
-int main(void)
+/*int main(void)
 {
     char *original = "Hello, World!";
     char *copy = ft_strdup(original);

@@ -65,7 +65,7 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.parameterHints.enabled": false,
   "editor.inlineSuggest.enabled": false,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "editor.wordBasedSuggestions": "off",
   "C_Cpp.autocomplete": "disabled",
   "C_Cpp.intelliSenseEngine": "disabled"

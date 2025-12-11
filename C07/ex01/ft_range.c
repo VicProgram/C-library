@@ -1,20 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/24 22:20:07 by vabad-ro          #+#    #+#             */
+/*   Updated: 2025/11/27 13:41:34 by vabad-ro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int	*ft_range(int min, int max)
 {
 	int	n;
 	int	j;
-	int	*arr;
+	int *arr;
 
 	if (min >= max)
 		return (NULL);
 	else
 		n = max - min;
-	
+
 	arr = malloc(n * sizeof(int));
-	if	(!arr)
-        return (0);
+	if (!arr)
+		return (0);
 	j = 0;
 	while (min < max)
 	{
@@ -27,28 +38,28 @@ int	*ft_range(int min, int max)
 
 //pruebas con ayuda
 
-int main(void)
+/*int main(void)
 {
-    int min = 4;
-    int max = 9;
-    int *arr;
-    int n;
-    int i;
+	int min = 4;
+	int max = 9;
+	int *arr;
+	int n;
+	int i;
 
-    arr = ft_range(min, max);
-    if (!arr)
-        return (0);
+	arr = ft_range(min, max);
+	if (!arr)
+		return (0);
 
-    n = max - min;
+	n = max - min;
 
-    i = 0;
-    while (i < n)
-    {
-        printf("%d ", arr[i]);
-        i++;
-    }
+	i = 0;
+	while (i < n)
+	{
+		printf("%d ", arr[i]);
+		i++;
+	}
 
-    free(arr);
+	free(arr);
 	printf("\n");
-    return (0);
+	return (0);
 }

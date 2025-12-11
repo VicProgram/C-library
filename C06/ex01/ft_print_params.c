@@ -18,6 +18,11 @@ int	main(int argc, char **argv)
 	int	j;
 
 	i = 1;
+	if(argc == 1)
+	{
+		write(2, "Error en el número de argumentos", 32);
+		return (1);
+	}
 	while (argv[i])
 	{
 		j = 0;
