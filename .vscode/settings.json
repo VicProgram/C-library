@@ -32,15 +32,7 @@
 		"editor.selectionBackground": "#264f78",
 		// Tabs
 		"tab.activeBackground": "#0f0f0f",
-		"tab.inactiveBackground": "#1a1a1a",
-		"editor.tokenColorCustomizations": {
-		"comments": "#928374",
-		"keywords": "#fb4934",
-		"strings": "#b8bb26",
-		"numbers": "#d3869b",
-		"functions": "#fabd2f",
-		"variables": "#ebdbb2",
-		"types": "#83a598"
-	}
-}
+		"tab.inactiveBackground": "#1a1a1a"
+	},
+	"oneDarkPro.bold": true
 }
