@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vabad-ro <vabad-ro@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: vic <vic@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 22:20:07 by vabad-ro          #+#    #+#             */
-/*   Updated: 2025/11/27 13:41:34 by vabad-ro         ###   ########.fr       */
+/*   Updated: 2025/12/14 21:12:03 by vic              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int	ft_strlen(char *str)
 {
 	int	i;
-		
+
 	i = 0;
 	while (str[i] != '\0')
 		i++;
@@ -25,9 +25,9 @@ int	ft_strlen(char *str)
 
 char	*ft_strdup(char *str)
 {
+	int		i;
 	char	*dup;
-	int	i;
-	
+
 	i = 0;
 	dup = (char *)malloc(sizeof(*str) * (ft_strlen(str) + 1));
 	if (!dup)
