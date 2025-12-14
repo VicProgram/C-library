@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>S
 
-int	ft_strlen(char *str)
+int ft_strlen(char *str)
 {
 	int i;
 
@@ -24,11 +24,11 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strdup(char *str)
+char *ft_strdup(char *str)
 {
-	char	*dup;
-	int	;
-	
+	char *dup;
+	int i;
+
 	i = 0;
 	dup = (char *)malloc(sizeof(*str) * (ft_strlen(str) + 1));
 	if (!dup)
@@ -44,16 +44,16 @@ char	*ft_strdup(char *str)
 
 /*int main(void)
 {
-    char *original = "Hello, World!";
-    char *copy = ft_strdup(original);
+	char *original = "Hello, World!";
+	char *copy = ft_strdup(original);
 
-    if (copy == NULL)
-    {
-        printf("Error: malloc falló\n");
-        return 1;
-    }
-    printf("Original: %s\n", original);
-    printf("Copia: %s\n", copy);
-    free(copy);
-    return 0;
+	if (copy == NULL)
+	{
+		printf("Error: malloc falló\n");
+		return 1;
+	}
+	printf("Original: %s\n", original);
+	printf("Copia: %s\n", copy);
+	free(copy);
+	return 0;
 }*/

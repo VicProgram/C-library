@@ -1,10 +1,118 @@
 {
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "editor.insertSpaces": false,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "[c]": {
+    "editor.defaultFormatter": null,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+  },
+  "[h]": {
+    "editor.defaultFormatter": null,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true
+  },
+  "workbench.colorCustomizations": {
+    "editor.background": "#030303",
+    "sideBar.background": "#000000a4",
+    "activityBar.background": "#0e0f0f",
+    "panel.background": "#060707",
+    "titleBar.activeBackground": "#0c0d0e",
+    "statusBar.background": "#0d0f0faf",
+    "editorOverviewRuler.border": "#02020200",
+    "scrollbarSlider.background": "#00000000",
+    "scrollbarSlider.hoverBackground": "#00000000",
+    "scrollbarSlider.activeBackground": "#00000000",
+    "editorGroup.border": "#00000000",
+    "editor.lineHighlightBorder": "#00000000",
+    "tab.activeBorder": "#00000000",
+    "tab.activeBorderTop": "#00000000"
+  },
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "MonoLisa",
+  "editor.tokenColorCustomizations": {
+    "comments": "#928374",
+    "keywords": "#B16286",
+    "strings": "#B8BB26",
+    "numbers": "#ccfa91",
+    "variables": "#EBDBB2",
+    "functions": "#FABD2F",
+    "types": "#83A598",
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#928374",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.suggestSelection": "first",
+  "editor.suggest.preview": false,
+  "editor.suggestFontSize": 13,
+  "editor.suggestLineHeight": 20,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.tabCompletion": "onlySnippets",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
   "C_Cpp_Runner.cStandard": "",
   "C_Cpp_Runner.cppStandard": "",
-  "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.useMsvc": false,
   "C_Cpp_Runner.warnings": [
     "-Wall",
