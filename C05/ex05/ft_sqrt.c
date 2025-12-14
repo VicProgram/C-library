@@ -33,3 +33,4 @@ int	ft_sqrt(int nb)
 	printf("%d", ft_sqrt(1));
 	return (0);
 }
+*/
