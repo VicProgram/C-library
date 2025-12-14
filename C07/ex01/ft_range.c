@@ -13,9 +13,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int	*ft_range(int min, int max)
 {
-	int	n;
-	int	j;
+	int n;
+	int j;
 	int *arr;
 
 	if (min >= max)
@@ -36,7 +37,7 @@
 	return (arr);
 }
 
-//pruebas con ayuda
+// pruebas con ayuda
 
 /*int main(void)
 {
@@ -63,3 +64,4 @@
 	printf("\n");
 	return (0);
 }
+*/
