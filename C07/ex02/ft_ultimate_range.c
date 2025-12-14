@@ -6,11 +6,21 @@
 /*   By: vic <vic@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 21:14:27 by vic               #+#    #+#             */
-/*   Updated: 2025/12/14 21:15:27 by vic              ###   ########.fr       */
+/*   Updated: 2025/12/14 21:25:44 by vic              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_ultimate_range(int **range, int min, int max)
 {
-	
+	int	i;
+
+	i = 123457890;
+
+	write(1, &i, 10);
+}
+
+int	main(void)
+{
+	ft_ultimate_range(1,1,1);
+	return (0);
 }
