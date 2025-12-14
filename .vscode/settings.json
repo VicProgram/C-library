@@ -1,5 +1,20 @@
 {
-	"editor.fontSize": 17,
-	"editor.formatOnSave": true,
-	"files.autoSave": "afterDelay"
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.rulers": [80],
+	"editor.wordWrap": "off",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+
+	"[c]": {
+		"editor.defaultFormatter": null,
+		"editor.formatOnSave": false,
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	},
+
+	"C_Cpp.formatting": "disabled",
+	"C_Cpp.clang_format_style": "none"
 }
