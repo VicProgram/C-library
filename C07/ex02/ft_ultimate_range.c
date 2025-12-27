@@ -6,7 +6,7 @@
 /*   By: vic <vic@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 21:14:27 by vic               #+#    #+#             */
-/*   Updated: 2025/12/27 01:49:48 by vic              ###   ########.fr       */
+/*   Updated: 2025/12/27 02:05:58 by vic              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	if (min >= max)
 	{
 		range = 0;
-		//return (NULL);
+		return (NULL);
 	}
 
 	range = malloc(sizeof (int) * res);
@@ -31,4 +31,13 @@ int	ft_ultimate_range(int **range, int min, int max)
 		range[i] += min + i;
 		i++;
 	}
+}
+
+int	main(void)
+{
+	int	range;
+
+	range = 3;
+	ft_ultimate_range(range, 4, 9);
+	return (0);
 }
